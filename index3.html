@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+     input:valid {
+        border: 5px solid green;
+        
+        
+      }
+      input:valid + h3{
+        opacity: 0;
+        
+        
+      }
+      input:valid + h4{
+        opacity: 0;
+        
+        
+      }
+
+
+ input:focus[type="text"]{
+        width: 200px;
+        border: 3px solid blue;
+
+      }
+
+
+      input:invalid{
+        border: 5px solid red;
+      }
+
+input:focus[type="email"]{
+        width: 200px;
+        border: 3px solid blue;
+      }
+     
+
+
+</style>
+<body>
+
+<h2>change E-mail address</h2>
+
+<form action="/action_page.php">
+  
+    <input type="text" id="text" name="text" placeholder="Username"
+    pattern="[a-z]{4,8}" >
+  <h4>Usernames must be lowercase and 4-8 characters in length.</h4>
+  
+  <input type="email" id="lname" name="lname" placeholder="Email" >
+  <h3>The required Email may not include any special charaxters other than'@'sign</h3>
+  <input type="submit" value="change">
+</form> 
+
+
+
+</body>
+</html>
